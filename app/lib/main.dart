@@ -53,10 +53,10 @@ class MyApp extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(20)),
-                    child: Text(
+                    child: const Text(
                       "text 1",
                       style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.red,
                           fontSize: 15,
                           fontWeight: FontWeight.bold),
                     )),
