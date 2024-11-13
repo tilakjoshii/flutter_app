@@ -35,7 +35,13 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const Text("Welcome to my flutter app!"),
+                const Text(
+                  "Welcome to my flutter app!",
+                  style: TextStyle(
+                    //color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
                 const Column(
                   children: [
                     Text("Image"),
@@ -56,7 +62,7 @@ class MyApp extends StatelessWidget {
                     child: const Text(
                       "text 1",
                       style: TextStyle(
-                          color: Colors.red,
+                          color: Colors.white,
                           fontSize: 15,
                           fontWeight: FontWeight.bold),
                     )),
