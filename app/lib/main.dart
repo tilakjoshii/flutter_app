@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
             centerTitle: true,
             backgroundColor: Colors.blue[900],
             title: const Text(
-              "hello Flutter",
+              "Top Bar",
               style: TextStyle(color: Colors.white),
             ),
           ),
@@ -36,35 +36,61 @@ class MyApp extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const Text(
-                  "Welcome to my flutter app!",
+                  "Welcome to my My app!",
                   style: TextStyle(
                     //color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const Column(
+                Column(
                   children: [
-                    Text("Image"),
-                    SizedBox(
+                    Image.network(
+                      "https://cdn-icons-png.flaticon.com/512/5197/5197098.png",
+                      height: 100,
+                    ),
+                    const SizedBox(
                       height: 20,
                       width: double.infinity,
                     ),
-                    Text("This App is developed By Tilak!"),
+                    const Text("This App is developed By Tilak!"),
                   ],
                 ),
                 Container(
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(20),
                     width: double.infinity,
-                    height: 50,
+                    // height: 50,
                     decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(20)),
-                    child: const Text(
-                      "text 1",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold),
+                        color: const Color.fromARGB(255, 36, 33, 33),
+                        borderRadius: BorderRadius.circular(25)),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          "assets/images/profile.png",
+                          height: 70,
+                        ),
+                        const SizedBox(
+                          width: 30,
+                        ),
+                        const Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "N: Tilak Joshi",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              "E: tilakjoshibiatadi@gmail.com",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            Text(
+                              "W: www.tilakjoshi.com.np",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ],
                     )),
               ],
             ),
