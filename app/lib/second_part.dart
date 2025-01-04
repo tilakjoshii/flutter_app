@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 
 class SecondPart extends StatelessWidget {
   const SecondPart({super.key});
+  void clickMeFunc() {
+    int a = 20;
+    int b = 20;
+    int c = a + b;
+    print("Total sum is: " + c.toString());
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +28,15 @@ class SecondPart extends StatelessWidget {
               fontSize: 18,
               fontWeight: FontWeight.bold),
         ),
+        ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red[600],
+                minimumSize: Size(double.infinity, 50)),
+            onPressed: clickMeFunc,
+            child: Text(
+              "Click Here",
+              style: TextStyle(color: Colors.white),
+            ))
       ],
     );
   }

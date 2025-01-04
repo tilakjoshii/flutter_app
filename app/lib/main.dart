@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(fontFamily: "Poppins"),
+      darkTheme: ThemeData.dark(useMaterial3: true),
       home: Scaffold(
           appBar: AppBar(
             centerTitle: true,
