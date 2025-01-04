@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class SecondPart extends StatelessWidget {
@@ -6,7 +8,9 @@ class SecondPart extends StatelessWidget {
     int a = 20;
     int b = 20;
     int c = a + b;
-    print("Total sum is: " + c.toString());
+    //print("Total sum is: " + c.toString());
+    //print("Total sum is: " + c.toString());
+    //print("Total sum is: " + c.toString());
   }
 
   @override
